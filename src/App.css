@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Custom CSS for the grid layout: 3 columns */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Animation for the selected state */
+.pop {
+  animation: pop 0.3s;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
